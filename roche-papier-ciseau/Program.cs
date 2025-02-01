@@ -10,6 +10,7 @@ namespace roche_papier_ciseau
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
