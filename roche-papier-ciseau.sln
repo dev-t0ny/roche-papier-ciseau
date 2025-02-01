@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "roche-papier-ciseau", "roche-papier-ciseau\roche-papier-ciseau.csproj", "{2DF6BEDD-52C7-47C9-A65D-B7AF81F10DEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DF6BEDD-52C7-47C9-A65D-B7AF81F10DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF6BEDD-52C7-47C9-A65D-B7AF81F10DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF6BEDD-52C7-47C9-A65D-B7AF81F10DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF6BEDD-52C7-47C9-A65D-B7AF81F10DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CF46C53-9E03-4AE8-A31B-E028091E04B1}
+	EndGlobalSection
+EndGlobal
