@@ -72,8 +72,7 @@ namespace roche_papier_ciseau
                 
                 if (j.PointDeVie == 0)
                 {
-                    Console.WriteLine("Le joueur j gagne la partie!");
-                    Console.ReadLine();
+                    Console.WriteLine($"Le joueur {j.Nom} gagne la partie!");
                     return true;
                 }
             }

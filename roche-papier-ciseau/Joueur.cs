@@ -39,6 +39,10 @@ namespace roche_papier_ciseau
 			Nom = ObtenirNouveauNom();
         }
 
+		/// <summary>
+		/// Obtiens un nouveau nom de joueur
+		/// </summary>
+		/// <returns>Nom du joueur</returns>
 		public virtual string ObtenirNouveauNom()
 		{
 			Console.Write("Veuillez entrer votre prénom: ");
