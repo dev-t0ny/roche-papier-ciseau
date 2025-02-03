@@ -43,15 +43,43 @@ namespace roche_papier_ciseau
                     }
                     break;
                 case Choix.Papier:
-                    
+                    if (Joueurs[1].ChoixActuel == Choix.Ciseau)
+                    {
+                        Joueurs[1].PointDeVie--;
+                    }
+                    else if (Joueurs[1].ChoixActuel == Choix.Roche)
+                    {
+                        Joueurs[0].PointDeVie--;
+                    }
                     break;
 
                 case Choix.Ciseau:
-
+                    if (Joueurs[1].ChoixActuel == Choix.Papier)
+                    {
+                        Joueurs[1].PointDeVie--;
+                    }
+                    else if (Joueurs[1].ChoixActuel == Choix.Roche)
+                    {
+                        Joueurs[0].PointDeVie--;
+                    }
                     break;
             }
 
-            return true;
+            foreach (Joueur j in Joueurs)
+            {
+                
+                Console.WriteLine($"Point de vie du joueur {j.Nom}: {j.PointDeVie}");
+                
+                if (j.PointDeVie == 0)
+                {
+                    Console.WriteLine("Le joueur j gagne la partie!");
+                    Console.ReadLine();
+                    return true;
+                }
+            }
+            Console.WriteLine("Fin de la manche. Appuyer sur entrer pour continuer");
+            Console.ReadLine();
+            return false;
         }
     }
 }

@@ -13,8 +13,15 @@ namespace roche_papier_ciseau
     {
 		private int _pointDeVie;
 		private Choix _choixActuel;
+		private string _nom;
 
-        public Choix ChoixActuel
+		public string Nom
+		{
+			get { return _nom; }
+			set { _nom = value; }
+		}
+
+		public Choix ChoixActuel
 		{
 			get { return _choixActuel; }
 			set { _choixActuel = value; }
@@ -29,12 +36,19 @@ namespace roche_papier_ciseau
         public Joueur()
         {
 			PointDeVie = 3;
+			Nom = ObtenirNouveauNom();
         }
+
+		public virtual string ObtenirNouveauNom()
+		{
+			Console.Write("Veuillez entrer votre prénom: ");
+			return Console.ReadLine();
+		}
 
 		/// <summary>
 		/// Obtiens un nouveau choix entre Roche Papier Ciseau
 		/// </summary>
-        public void ObtenirNouveauChoix()
+        public virtual void ObtenirNouveauChoix()
 		{
 			Console.WriteLine("Veuillez choisir:");
 			Console.WriteLine("[1] Roche");
