@@ -37,6 +37,7 @@ namespace roche_papier_ciseau
         {
 			PointDeVie = 3;
 			Nom = ObtenirNouveauNom();
+			Console.WriteLine();
         }
 
 		/// <summary>
@@ -64,10 +65,16 @@ namespace roche_papier_ciseau
 			try
 			{
 				choixTemp = int.Parse((Console.ReadLine()));
+				choixTemp--;
+				if (choixTemp < 0 || choixTemp > 2)
+				{
+					throw new ArgumentOutOfRangeException();
+				}
 			}
 			catch
 			{
 				Console.WriteLine("Erreur. Veuillez faire un choix valide (Un nombre entre 1-3)");
+				ObtenirNouveauChoix();
 			}
 			ChoixActuel = (Choix)choixTemp;
         }

@@ -28,6 +28,9 @@ namespace roche_papier_ciseau
             foreach (Joueur j in Joueurs)
             {
                 j.ObtenirNouveauChoix();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Le joueur {j.Nom} sélectionne: {j.ChoixActuel}");
+                Console.ResetColor();
             }
             
             switch (Joueurs[0].ChoixActuel)
@@ -45,11 +48,11 @@ namespace roche_papier_ciseau
                 case Choix.Papier:
                     if (Joueurs[1].ChoixActuel == Choix.Ciseau)
                     {
-                        Joueurs[1].PointDeVie--;
+                        Joueurs[0].PointDeVie--;
                     }
                     else if (Joueurs[1].ChoixActuel == Choix.Roche)
                     {
-                        Joueurs[0].PointDeVie--;
+                        Joueurs[1].PointDeVie--;
                     }
                     break;
 
