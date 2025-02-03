@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 namespace roche_papier_ciseau
 {
     public class Jeu
     {
 		private Joueur[] _joueurs;
-
 		public Joueur[] Joueurs
 		{
 			get { return _joueurs; }
 			set { _joueurs = value; }
 		}
-
         public Jeu(Joueur j1, Joueur j2)
         {
             Joueurs = new Joueur[2];

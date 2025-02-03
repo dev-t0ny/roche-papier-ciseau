@@ -20,19 +20,16 @@ namespace roche_papier_ciseau
 			get { return _nom; }
 			set { _nom = value; }
 		}
-
 		public Choix ChoixActuel
 		{
 			get { return _choixActuel; }
 			set { _choixActuel = value; }
 		}
-
 		public int PointDeVie
 		{
 			get { return _pointDeVie; }
 			set { _pointDeVie = value; }
 		}
-
         public Joueur()
         {
 			PointDeVie = 3;

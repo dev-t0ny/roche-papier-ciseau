@@ -4,7 +4,6 @@ namespace roche_papier_ciseau
 {
     public class JoueurOrdinateur : Joueur
     {
-
         public override string ObtenirNouveauNom()
         {
             string[] firstNames = new string[]
